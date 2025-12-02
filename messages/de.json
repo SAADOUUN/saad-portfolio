@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "certifications": "Zertifizierungen",
+    "contact": "Kontakt",
+    "downloadCV": "Lebenslauf herunterladen"
+  },
+  "hero": {
+    "title": "Saad El Filali",
+    "slogan": "Student für Cybersicherheit & Infrastruktur — Build, Protect, Innovate."
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin ein Student der Cybersicherheit und Infrastruktur, tief in Netzwerke und Code eingetaucht. Ich baue abgesicherte Systeme, beschütze digitale Assets wie ein Geist im Cyberspace und erkunde ständig neue technologische Grenzen. Mit fundierten Kenntnissen in Netzwerkarchitektur, Systemadministration sowie offensiven/defensiven Taktiken bleibe ich den drohenden digitalen Bedrohungen immer einen Schritt voraus."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "classified": "GEHEIM",
+    "capabilities": "Fähigkeiten",
+    "infrastructure": {
+      "title": "Infrastruktur & Systeme",
+      "network": "Netzwerkarchitektur",
+      "admin": "Systemadministration",
+      "virtualization": "Virtualisierung",
+      "automation": "Automatisierung / Scripting (Python, PowerShell)",
+      "systems": "Informationssysteme"
+    },
+    "cybersecurity": {
+      "title": "Offensive & Defensive Cybersicherheit",
+      "fundamentals": "Cyber-Grundlagen",
+      "pentesting": "Pentesting (Penetrationstests)",
+      "incident": "Incident Response",
+      "hardening": "Systemhärtung",
+      "security": "Informationssicherheit",
+      "forensics": "Forensik (Digitale Untersuchung)"
+    },
+    "management": {
+      "title": "Management & Methodik",
+      "risks": "Risikomanagement",
+      "watch": "Technologiebeobachtung",
+      "culture": "Professionelle Kultur"
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "communication": "Kommunikation",
+      "teamwork": "Teamarbeit",
+      "problemSolving": "Problemlösung",
+      "timeManagement": "Zeitmanagement",
+      "adaptability": "Anpassungsfähigkeit"
+    }
+  },
+  "projects": {
+    "title": "Cyber-Operationen",
+    "classified": "GEHEIM",
+    "operation": "Operation",
+    "missionBriefing": "Missionsbriefing",
+    "toolsExploits": "Werkzeuge / Exploits",
+    "resultImpact": "Ergebnis / Auswirkung",
+    "comingSoon": "Weitere Operationen kommen bald...",
+    "cml": {
+      "operationName": "Operation HONEYPOT-SHIELD",
+      "missionBriefing": "Bereitstellung und Konfiguration einer hochentwickelten Honeypot-Infrastruktur mit Cisco Modeling Labs (CML) zur Simulation anfälliger Netzwerkdienste. Die Operation lockte erfolgreich bösartige Datenverkehrsmuster an und analysierte sie, wodurch kritische Informationen über Angriffsvektoren und Bedrohungsakteursverhalten bereitgestellt wurden.",
+      "toolsExploits": "Cisco Modeling Labs (CML), Netzwerksimulation, Honeypot-Konfiguration, Verkehrsanalyse",
+      "resultImpact": "Erfolgreiche Erfassung und Analyse von über 500 Angriffsversuchen, Identifizierung von 15 einzigartigen Angriffsmustern, Verbesserung der Netzwerksicherheitslage durch Bedrohungsaufklärung."
+    },
+    "caldera": {
+      "operationName": "Operation CALDERA-STRIKE",
+      "missionBriefing": "Bereitstellung des MITRE Caldera-Frameworks mit Docker-Containerisierung für automatisierte Adversary-Emulation. Durchführung umfassender Red-Team-Übungen zur Prüfung der Verteidigungsfähigkeiten und Validierung von Sicherheitskontrollen gegen bekannte Angriffstechniken.",
+      "toolsExploits": "MITRE Caldera, Docker, Adversary-Emulation, Red-Team-Operationen, TTPs (Taktiken, Techniken, Verfahren)",
+      "resultImpact": "Automatisierung von über 50 Angriffsszenarien, Validierung von 30 Sicherheitskontrollen, Verbesserung der Incident-Response-Fähigkeiten um 40% durch kontinuierliches Testen."
+    },
+    "metasploit": {
+      "operationName": "Operation METASPLOIT-RED",
+      "missionBriefing": "Durchführung autorisierter Penetrationstest-Operationen mit dem Metasploit-Framework zur Identifizierung und Ausnutzung von Schwachstellen in kontrollierten Umgebungen. Durchführung umfassender Sicherheitsbewertungen zur Stärkung der Verteidigungsmaßnahmen und Behebung kritischer Sicherheitslücken.",
+      "toolsExploits": "Metasploit-Framework, Exploit-Entwicklung, Schwachstellenbewertung, Post-Exploitation, Payload-Generierung",
+      "resultImpact": "Identifizierung von 25 kritischen Schwachstellen, erfolgreiche Behebung von 20 Sicherheitslücken, Verbesserung der Gesamtsicherheitslage um 60% durch proaktive Bedrohungssuche."
+    }
+  },
+  "certifications": {
+    "title": "Zertifizierungen",
+    "viewCredly": "Auf Credly ansehen",
+    "python": {
+      "title": "Python Essentials",
+      "issuer": "Cisco Academy",
+      "date": "Ausgestellt am 20. Apr. 2025"
+    },
+    "cybersecurity": {
+      "title": "Introduction to Cybersecurity",
+      "issuer": "Cisco Academy",
+      "date": "Ausgestellt am 23. Apr. 2025"
+    },
+    "hardware": {
+      "title": "Computer Hardware Basics",
+      "issuer": "Cisco Academy",
+      "date": "Ausgestellt am 20. Apr. 2025"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten"
+  }
+}
+

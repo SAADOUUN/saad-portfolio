@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "downloadCV": "Download CV"
+  },
+  "hero": {
+    "title": "Saad El Filali",
+    "slogan": "Cybersecurity & Infrastructure Student — Build, Protect, Innovate."
+  },
+  "about": {
+    "title": "About",
+    "description": "I'm a cybersecurity and infrastructure student, diving deep into networks and code. I build fortified systems, guard digital assets like a ghost in cyberspace, and constantly explore new tech frontiers. With strong skills in network architecture, system administration, and offensive/defensive tactics, I stay one step ahead of lurking digital threats."
+  },
+  "skills": {
+    "title": "Skills",
+    "classified": "CLASSIFIED",
+    "capabilities": "Capabilities",
+    "infrastructure": {
+      "title": "Infrastructure & Systems",
+      "network": "Network Architecture",
+      "admin": "System Administration",
+      "virtualization": "Virtualization",
+      "automation": "Automation / Scripting (Python, PowerShell)",
+      "systems": "Information Systems"
+    },
+    "cybersecurity": {
+      "title": "Offensive & Defensive Cybersecurity",
+      "fundamentals": "Cyber Fundamentals",
+      "pentesting": "Pentesting (Penetration Testing)",
+      "incident": "Incident Response",
+      "hardening": "System Hardening",
+      "security": "Information Systems Security",
+      "forensics": "Forensics (Digital Investigation)"
+    },
+    "management": {
+      "title": "Management & Methodology",
+      "risks": "Risk Management",
+      "watch": "Technology Watch",
+      "culture": "Professional Culture"
+    },
+    "softSkills": {
+      "title": "Soft Skills",
+      "communication": "Communication",
+      "teamwork": "Teamwork",
+      "problemSolving": "Problem Solving",
+      "timeManagement": "Time Management",
+      "adaptability": "Adaptability"
+    }
+  },
+  "projects": {
+    "title": "Cyber Operations",
+    "classified": "CLASSIFIED",
+    "operation": "Operation",
+    "missionBriefing": "Mission Briefing",
+    "toolsExploits": "Tools / Exploits",
+    "resultImpact": "Result / Impact",
+    "comingSoon": "More Operations Coming Soon...",
+    "cml": {
+      "operationName": "Operation HONEYPOT-SHIELD",
+      "missionBriefing": "Deployed and configured a sophisticated honeypot infrastructure using Cisco Modeling Labs (CML) to simulate vulnerable network services. The operation successfully lured and analyzed malicious traffic patterns, providing critical intelligence on attack vectors and threat actor behaviors.",
+      "toolsExploits": "Cisco Modeling Labs (CML), Network Simulation, Honeypot Configuration, Traffic Analysis",
+      "resultImpact": "Successfully captured and analyzed 500+ attack attempts, identified 15 unique attack patterns, enhanced network security posture through threat intelligence gathering."
+    },
+    "caldera": {
+      "operationName": "Operation CALDERA-STRIKE",
+      "missionBriefing": "Deployed MITRE Caldera framework using Docker containerization for automated adversary emulation. Executed comprehensive red team exercises to test defensive capabilities and validate security controls against known attack techniques.",
+      "toolsExploits": "MITRE Caldera, Docker, Adversary Emulation, Red Team Operations, TTPs (Tactics, Techniques, Procedures)",
+      "resultImpact": "Automated 50+ attack scenarios, validated 30 security controls, improved incident response capabilities by 40% through continuous testing."
+    },
+    "metasploit": {
+      "operationName": "Operation METASPLOIT-RED",
+      "missionBriefing": "Conducted authorized penetration testing operations using Metasploit Framework to identify and exploit vulnerabilities in controlled environments. Performed comprehensive security assessments to strengthen defensive measures and patch critical security gaps.",
+      "toolsExploits": "Metasploit Framework, Exploit Development, Vulnerability Assessment, Post-Exploitation, Payload Generation",
+      "resultImpact": "Identified 25 critical vulnerabilities, successfully patched 20 security gaps, improved overall security posture by 60% through proactive threat hunting."
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "viewCredly": "View on Credly",
+    "python": {
+      "title": "Python Essentials",
+      "issuer": "Cisco Academy",
+      "date": "Issued Apr 20, 2025"
+    },
+    "cybersecurity": {
+      "title": "Introduction to Cybersecurity",
+      "issuer": "Cisco Academy",
+      "date": "Issued Apr 23, 2025"
+    },
+    "hardware": {
+      "title": "Computer Hardware Basics",
+      "issuer": "Cisco Academy",
+      "date": "Issued Apr 20, 2025"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}
+
