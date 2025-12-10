@@ -13,6 +13,7 @@
     "lucide-react": "^0.303.0",
     "next": "^14.0.4",
     "next-intl": "^3.5.0",
+    "openai": "^6.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "resend": "^6.5.2",

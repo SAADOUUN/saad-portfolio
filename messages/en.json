@@ -59,6 +59,7 @@
     "missionBriefing": "Mission Briefing",
     "toolsExploits": "Tools / Exploits",
     "resultImpact": "Result / Impact",
+    "runSimulation": "Run Simulation",
     "comingSoon": "More Operations Coming Soon...",
     "cml": {
       "operationName": "Operation HONEYPOT-SHIELD",
@@ -109,4 +110,3 @@
     "rights": "All rights reserved"
   }
 }
-

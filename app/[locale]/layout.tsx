@@ -5,6 +5,8 @@ import { locales } from '@/i18n';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AuthWrapper from '@/components/AuthWrapper';
+import AutoTranslationProvider from '@/components/AutoTranslationProvider';
+import { ShutdownProvider } from '@/components/ShutdownContext';
 import '../globals.css';
 
 export async function generateStaticParams() {
@@ -31,16 +33,19 @@ export default async function LocaleLayout({
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className="min-h-screen bg-cyber-black text-cyber-gray">
         <NextIntlClientProvider messages={messages}>
-          <AuthWrapper>
-            <Navbar />
-            <main className="relative md:ml-64">
-              {children}
-            </main>
-            <Footer />
-          </AuthWrapper>
+          <AutoTranslationProvider locale={locale}>
+            <ShutdownProvider>
+              <AuthWrapper>
+                <Navbar />
+                <main className="relative md:ml-64">
+                  {children}
+                </main>
+                <Footer />
+              </AuthWrapper>
+            </ShutdownProvider>
+          </AutoTranslationProvider>
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
-
