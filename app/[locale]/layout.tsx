@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/i18n';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import AuthWrapper from '@/components/AuthWrapper';
+import LoadingScreen from '@/components/LoadingScreen';
+
 import AutoTranslationProvider from '@/components/AutoTranslationProvider';
 import { ShutdownProvider } from '@/components/ShutdownContext';
 import '../globals.css';
@@ -35,13 +36,13 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <AutoTranslationProvider locale={locale}>
             <ShutdownProvider>
-              <AuthWrapper>
+              <LoadingScreen>
                 <Navbar />
                 <main className="relative md:ml-64">
                   {children}
                 </main>
                 <Footer />
-              </AuthWrapper>
+              </LoadingScreen>
             </ShutdownProvider>
           </AutoTranslationProvider>
         </NextIntlClientProvider>
