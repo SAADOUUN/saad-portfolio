@@ -1,11 +1,58 @@
-import { OpenAI } from 'openai';
 import { NextResponse } from 'next/server';
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
+const GOOGLE_API_KEY = 'AIzaSyCQiR9Cw7r9WBZfInm7K1wfjU4dkduJMh0';
 
 export const runtime = 'edge';
+
+// Recursively translate all string values in an object
+async function translateObject(obj: any, targetLang: string): Promise<any> {
+    if (typeof obj === 'string') {
+        return await translateText(obj, targetLang);
+    }
+
+    if (Array.isArray(obj)) {
+        return Promise.all(obj.map(item => translateObject(item, targetLang)));
+    }
+
+    if (typeof obj === 'object' && obj !== null) {
+        const result: any = {};
+        for (const key of Object.keys(obj)) {
+            result[key] = await translateObject(obj[key], targetLang);
+        }
+        return result;
+    }
+
+    return obj;
+}
+
+async function translateText(text: string, targetLang: string): Promise<string> {
+    // Skip translation for certain terms
+    const skipTerms = ['CLASSIFIED', 'Cisco Modeling Labs', 'Docker', 'GitHub', 'LinkedIn'];
+    if (skipTerms.includes(text)) {
+        return text;
+    }
+
+    const url = `https://translation.googleapis.com/language/translate/v2?key=${GOOGLE_API_KEY}`;
+
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            q: text,
+            target: targetLang,
+            format: 'text'
+        }),
+    });
+
+    if (!response.ok) {
+        throw new Error(`Google Translate API error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data.data.translations[0].translatedText;
+}
 
 export async function POST(req: Request) {
     try {
@@ -18,25 +65,7 @@ export async function POST(req: Request) {
             );
         }
 
-        const completion = await openai.chat.completions.create({
-            model: 'gpt-4o-mini',
-            messages: [
-                {
-                    role: 'system',
-                    content: `You are a professional translator. Translate the given JSON content into ${targetLang}. 
-          Maintain the exact same JSON structure and keys. Only translate the values.
-          Do not translate "CLASSIFIED" or specific technical terms like "Cisco Modeling Labs" or "Docker" if they are better left in English, but adapt context if needed.
-          Return ONLY the valid JSON object.`,
-                },
-                {
-                    role: 'user',
-                    content: JSON.stringify(content),
-                },
-            ],
-            response_format: { type: 'json_object' },
-        });
-
-        const translatedContent = JSON.parse(completion.choices[0].message.content || '{}');
+        const translatedContent = await translateObject(content, targetLang);
 
         return NextResponse.json(translatedContent);
     } catch (error) {

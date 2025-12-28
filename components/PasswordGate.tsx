@@ -185,15 +185,28 @@ export default function PasswordGate({ onSuccess }: { onSuccess: () => void }) {
                   )}
                 </AnimatePresence>
 
-                {/* Hint Button */}
+                {/* Hint and Skip Buttons */}
                 <div className="flex items-center justify-between pt-2">
-                  <button
-                    type="button"
-                    onClick={() => setShowHint(!showHint)}
-                    className="text-cyber-gray hover:text-cyber-red font-mono text-xs transition-colors flex items-center gap-2"
-                  >
-                    <span>Need a hint?</span>
-                  </button>
+                  <div className="flex items-center gap-4">
+                    <button
+                      type="button"
+                      onClick={() => setShowHint(!showHint)}
+                      className="text-cyber-gray hover:text-cyber-red font-mono text-xs transition-colors flex items-center gap-2"
+                    >
+                      <span>Need a hint?</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        sessionStorage.setItem('cyber_auth', 'true');
+                        playCyberSound('access-granted');
+                        onSuccess();
+                      }}
+                      className="text-cyber-gray hover:text-cyber-red font-mono text-xs transition-colors underline"
+                    >
+                      Skip →
+                    </button>
+                  </div>
                   <motion.button
                     type="submit"
                     whileHover={{ scale: 1.05 }}
