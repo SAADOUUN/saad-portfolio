@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const GOOGLE_API_KEY = 'AIzaSyCQiR9Cw7r9WBZfInm7K1wfjU4dkduJMh0';
+const GOOGLE_API_KEY = process.env.GOOGLE_TRANSLATE_API_KEY || '';
 
 export const runtime = 'edge';
 
@@ -56,6 +56,14 @@ async function translateText(text: string, targetLang: string): Promise<string> 
 
 export async function POST(req: Request) {
     try {
+        // Check if API key is configured
+        if (!GOOGLE_API_KEY) {
+            return NextResponse.json(
+                { error: 'Translation service not configured' },
+                { status: 503 }
+            );
+        }
+
         const { targetLang, content } = await req.json();
 
         if (!targetLang || !content) {

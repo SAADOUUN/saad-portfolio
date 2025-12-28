@@ -75,10 +75,10 @@ export default function LoadingScreen({ children }: { children: React.ReactNode 
 
                             {/* Console Output Effect */}
                             <div className="mt-4 font-mono text-xs text-cyber-gray/70 h-16 opacity-70">
-                                <p>> Connecting to secure server...</p>
-                                {progress > 30 && <p>> Verifying encryption keys...</p>}
-                                {progress > 60 && <p>> Loading interface modules...</p>}
-                                {progress > 90 && <p>> ACCESS GRANTED</p>}
+                                <p>{'>'} Connecting to secure server...</p>
+                                {progress > 30 && <p>{'>'} Verifying encryption keys...</p>}
+                                {progress > 60 && <p>{'>'} Loading interface modules...</p>}
+                                {progress > 90 && <p>{'>'} ACCESS GRANTED</p>}
                             </div>
 
                         </div>

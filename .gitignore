@@ -34,3 +34,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# build output logs
+build_output*.txt
+lint_output*.txt
