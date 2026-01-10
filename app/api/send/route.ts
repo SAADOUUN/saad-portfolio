@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
     try {
         // Check if API key is configured
@@ -12,6 +10,8 @@ export async function POST(request: Request) {
                 { status: 503 }
             );
         }
+
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         const { name, email, message } = await request.json();
 

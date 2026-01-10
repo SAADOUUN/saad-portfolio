@@ -6,6 +6,7 @@
     "projects": "المشاريع",
     "certifications": "الشهادات",
     "contact": "اتصل",
+    "experiences": "الخبرات",
     "downloadCV": "تحميل السيرة الذاتية"
   },
   "hero": {
@@ -50,6 +51,15 @@
       "problemSolving": "حل المشكلات",
       "timeManagement": "إدارة الوقت",
       "adaptability": "التكيف"
+    }
+  },
+  "experiences": {
+    "title": "الخبرات المهنية",
+    "stadier": {
+      "title": "Steward – Africa Cup of Nations (AFCON 2025)",
+      "location": "المغرب",
+      "description": "Crowd management and orientation within the stadium. Access verification and collaboration with security teams. Public assistance during a high-attendance event.",
+      "gallery": "معرض الوسائط"
     }
   },
   "projects": {
@@ -109,4 +119,3 @@
     "rights": "جميع الحقوق محفوظة"
   }
 }
-

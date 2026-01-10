@@ -6,6 +6,7 @@
     "projects": "Projects",
     "certifications": "Certifications",
     "contact": "Contact",
+    "experiences": "Experiences",
     "downloadCV": "Download CV"
   },
   "hero": {
@@ -50,6 +51,15 @@
       "problemSolving": "Problem Solving",
       "timeManagement": "Time Management",
       "adaptability": "Adaptability"
+    }
+  },
+  "experiences": {
+    "title": "Professional Experiences",
+    "stadier": {
+      "title": "Steward – Africa Cup of Nations (AFCON 2025)",
+      "location": "Morocco",
+      "description": "Crowd management and orientation within the stadium. Access verification and collaboration with security teams. Public assistance during a high-attendance event.",
+      "gallery": "Media Gallery"
     }
   },
   "projects": {

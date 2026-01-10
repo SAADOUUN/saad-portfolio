@@ -6,6 +6,7 @@
     "projects": "Projets",
     "certifications": "Certifications",
     "contact": "Contact",
+    "experiences": "Expériences",
     "downloadCV": "Télécharger CV"
   },
   "hero": {
@@ -50,6 +51,15 @@
       "problemSolving": "Résolution de problèmes",
       "timeManagement": "Gestion du temps",
       "adaptability": "Adaptabilité"
+    }
+  },
+  "experiences": {
+    "title": "Expériences Professionnelles",
+    "stadier": {
+      "title": "Stadier – Coupe d’Afrique des Nations (CAN 2025)",
+      "location": "Maroc",
+      "description": "Gestion des supporters et orientation dans le stade. Vérification des accès et collaboration avec les équipes de sécurité. Assistance au public lors d’un événement à très forte affluence.",
+      "gallery": "Galerie Média"
     }
   },
   "projects": {
@@ -109,4 +119,3 @@
     "rights": "Tous droits réservés"
   }
 }
-

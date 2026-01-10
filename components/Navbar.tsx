@@ -19,6 +19,7 @@ export default function Navbar() {
     { key: 'about', href: '/about' },
     { key: 'skills', href: '/skills' },
     { key: 'projects', href: '/projects' },
+    { key: 'experiences', href: '/experiences' },
     { key: 'certifications', href: '/certifications' },
     { key: 'contact', href: '/contact' },
   ];
